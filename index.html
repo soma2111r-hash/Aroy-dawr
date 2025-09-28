@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KurdSport - هەواڵی وەرزشی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KurdSport ⚽</h1>
+        <button id="toggle-admin-btn">چوونە ژوورەوەی ئەدمن</button>
+    </header>
+
+    <main>
+        <section id="admin-panel" class="hidden">
+            <h2>بەشی پۆستکردنی هەواڵی ئەدمن</h2>
+            <form id="news-post-form">
+                <input type="text" id="post-title" placeholder="ناونیشانی هەواڵ" required>
+                <textarea id="post-content" placeholder="ناوەرۆکی هەواڵ" rows="5" required></textarea>
+                
+                <label for="post-image">وێنەی سەرەکی هەواڵەکە هەڵبژێرە:</label>
+                <input type="file" id="post-image" accept="image/*">
+                
+                <label for="post-video">ڤیدیۆی سەرەکی هەواڵەکە هەڵبژێرە:</label>
+                <input type="file" id="post-video" accept="video/*">
+                
+                <input type="text" id="post-author" placeholder="ناوی نووسەر (ئەدمن)" required>
+                <button type="submit">بڵاوکردنەوەی هەواڵ</button>
+            </form>
+            <p class="warning">
+                ⚠️ **تێبینی گرنگ**: وێنە و ڤیدیۆکان تەنها لەسەر ئەم ئامێرە دەردەکەون، چونکە ئەمە پڕۆژەیەکی فرۆنتئێندی سادەیە و سێرڤەری نییە.
+            </p>
+        </section>
+
+        <section id="news-feed">
+            <h2>نوێترین هەواڵە وەرزشییەکان</h2>
+            </section>
+    </main>
+
+    <footer>
+        &copy; 2025 KurdSport | نموونەی فرۆنتئێند
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
