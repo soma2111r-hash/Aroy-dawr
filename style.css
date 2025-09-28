@@ -1,0 +1,143 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* شینی کاڵی زۆر کراوە (AliceBlue) */
+    color: #333;
+    direction: rtl; 
+    text-align: right;
+}
+
+header {
+    background-color: #add8e6; /* شینی کاڵ (Light Blue) */
+    color: #004d99;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+#toggle-admin-btn {
+    background-color: #004d99; /* شینی تۆختر */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- شێوازی بەشی ئەدمن --- */
+#admin-panel {
+    background-color: #e0ffff; /* شینی کاڵی زۆر کراوە */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-right: 5px solid #4682b4; /* شینی پۆڵا (Steel Blue) */
+}
+
+#admin-panel.hidden {
+    display: none;
+}
+
+#news-post-form input[type="text"],
+#news-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#news-post-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004d99;
+}
+
+#news-post-form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px dashed #4682b4;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#news-post-form button {
+    background-color: #32cd32; /* سەوز بۆ بڵاوکردنەوە */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.warning {
+    color: #cc0000;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffcccc;
+    border-radius: 4px;
+    border: 1px solid #cc0000;
+}
+
+/* --- شێوازی هەواڵەکان --- */
+.news-article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.news-media {
+    margin-bottom: 15px;
+}
+
+.news-media img, .news-media video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: block;
+    /* زامنکردنی بچووکی ڤیدیۆ لە چوارچێوەی لاپەڕەکەدا */
+}
+
+.news-article h3 {
+    color: #004d99;
+    margin-top: 0;
+}
+
+.news-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #add8e6; 
+    color: #004d99;
+    width: 100%;
+    margin-top: 30px;
+}
